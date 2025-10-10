@@ -1,0 +1,17 @@
+.page-number-container{
+    align-self: center;
+    display: flex;
+    gap:2px;
+}
+.page-btn{
+    padding:10px;
+    margin:2px;
+    border:1px solid black;
+    cursor:pointer
+}
+.page-btn:hover{
+  background-color:lightgray
+}
+.active{
+    background-color:lightgray
+}

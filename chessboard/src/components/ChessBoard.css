@@ -1,0 +1,26 @@
+.board{
+    display:grid;
+    grid-template-columns: repeat(8,4rem);
+    grid-template-rows: repeat(8,4rem);
+    border: 2px solid #333;
+}
+.cell{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.light{
+    background-color: #f0d9b5;
+}
+.dark{
+    background-color: #b58863;
+}
+.hovered{
+    background-color: lightblue !important;
+}
+.highlight{
+    background-color: darkblue !important;
+}
+.pawn{
+    font-size: 2rem;
+}

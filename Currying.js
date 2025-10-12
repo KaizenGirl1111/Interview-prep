@@ -12,9 +12,9 @@ function sumCurry(...init){
 //currying a multi arg function
 
 function currying(){
-    return function(...moreArgs){
+    return function(...args){
         if(args.length>=fn.length){
-           return  currying.apply(this,moreArgs)
+           return  currying.apply(this,args)
         }
         else{
           return function(...args2){

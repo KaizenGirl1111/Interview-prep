@@ -11,7 +11,7 @@ function sumCurry(...init){
 
 //currying a multi arg function
 
-function currying(){
+function currying(fn){
     return function(...args){
         if(args.length>=fn.length){
            return  currying.apply(this,args)

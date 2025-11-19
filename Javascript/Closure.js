@@ -1,0 +1,6 @@
+/*
+Closure is a function bundled along with its references to its surrounding states.
+
+
+
+*/

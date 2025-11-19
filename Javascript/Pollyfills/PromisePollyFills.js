@@ -63,6 +63,7 @@ Handling competing animations or user interactions (first input wins).
 */
 
 function myPromiseAll(taskList) {
+  // check taskList is array
   let completed = 0;
   const result = new Array(taskList.length);
   return new Promise((resolve, reject) => {
@@ -128,3 +129,5 @@ myPromiseAll(mixedTasks).then((value)=>console.log("Promise all ",value)).catch(
 myPromiseAllSettled(mixedTasks).then((value)=>console.log("Promise all settled ",value)).catch(err=>console.log(err))
 myPromiseAny(mixedTasks).then((value)=>console.log("Promise any ",value)).catch(err=>console.log(err))
 myPromiseRace(mixedTasks).then(value=>console.log("Promise race ",value)).catch(err=>console.log("Promise race ",err))
+
+//promise is a class. .race() is like a method 
